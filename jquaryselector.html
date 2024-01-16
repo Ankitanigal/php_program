@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                // $("a[target!='_blank']").hide();
+                //  $("a[target='_blank']").hide();
+                // $("[href]").hide();
+                //  $("ul li:first-child").hide();
+                //$("ul li:first").hide();
+                //$("p:first").hide();
+                // $("p.intro").hide();
+                // $(this).hide();
+                // $("*").hide();
+                $("tr:even").css("background-color", "pink");
+                $("tr:odd").css("background-color", "red");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p>group 1:</p>
+    <ul>
+        <li>$</li>
+        <li>@</li>
+        <li>%</li>
+    </ul>
+
+    <p>group 2:</p>
+    <ul>
+        <li>*</li>
+        <li>^</li>
+        <li>&</li>
+    </ul>
+    <h2>This is a head </h2>
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Aqual media</td>
+            <td>Nashik</td>
+        </tr>
+        <tr>
+            <td>ESDS</td>
+            <td>Satpur</td>
+        </tr>
+        <tr>
+            <td>TCS</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Skill minds</td>
+            <td>Dwarka</td>
+        </tr>
+        <tr>
+            <td>Point matrix</td>
+            <td>Satpur</td>
+        </tr>
+    </table>
+
+    <p>This is a contain.</p>
+    <p>This is another contain.</p>
+    <h2 class="intro">This is a head</h2>
+
+    <p class="intro">This is a contain.</p>
+    <p><a href="https://www.w3schools.com/html/" target="_blank">Ankita's Tutorial</a></p>
+    <p><a href="https://www.w3schools.com/css/">Rushiii's Tutorial</a></p>
+
+    <button>Click me</button>
+
+</body>
+
+</html>

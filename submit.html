@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#div1").load("databasecreate.php", function(responseTxt, statusTxt, xhr) {
+                    if (statusTxt == "success")
+                        alert("form submitted successfully!");
+                    if (statusTxt == "error")
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>Form</h2>
+    </div>
+    <button>submit</button>
+</body>
+
+</html>

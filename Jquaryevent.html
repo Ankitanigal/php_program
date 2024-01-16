@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //$("p").click(function() {
+        //$("p").dblclick(function() {
+        // $("#p1").mouseenter(function() {
+        //     alert("heyyyyy Howwww youuuuuu!");
+        // $("#p1").mouseleave(function() {
+        //     alert("Bye! mla ny bolaych u leave na!");
+        $(document).ready(function() {
+            $("p").on({
+                mouseenter: function() {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function() {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function() {
+                        $(this).css("background-color", "yellow");
+                    }
+                    // $("#p2").mouseenter(function() {
+                    //     alert("You entered p2!");
+                    //     $("#p3").mouseenter(function() {
+                    //         alert("You entered p3!");
+                    //         $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="p1">Helloooooooooooooooo</p>
+
+</body>
+
+</html>
